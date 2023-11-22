@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Sederhanar</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    .container1 {
+        width: 100%x;
+        margin: 20px 20px;
+        padding: 50px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .container2 {
+        width: 300px;
+        margin: 50px auto;
+        padding: 10px 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .result{
+        width: 280px;
+        height: 30px;
+        margin: 5px 2px;
+    }
+
+    .button1 {
+        width: 90px;
+        height: 45px;
+        margin: 5px 2px;
+        border-color: aqua;
+        background-color: aqua;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .button2 {
+        width: 51px;
+        height: 45px;
+        margin: 5px 2px;
+        border-color:#f6fe80;
+        background-color: #f6fe80;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .button3 {
+        width: 288px;
+        height: 45px;
+        margin: 5px 2px;
+        border-color: aqua;
+        background-color: aqua;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .button4 {
+        width: 288px;
+        height: 45px;
+        margin: 5px 2px;
+        border-color:#f6fe80;
+        background-color: #f6fe80;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+
+</style>
+</head>
+<body>
+<div class="container1">
+    <center><h1>Kalkulator Sederhana</h1></center>
+    <div class="container2">
+        <input class="result" id="result" type="text" readonly>
+        <br>
+        <button class="button1" onclick="append('7')">7</button> 
+        <button class="button1" onclick="append('8')">8</button>
+        <button class="button1" onclick="append('9')">9</button>
+        <br>
+        <button class="button1" onclick="append('4')">4</button>
+        <button class="button1" onclick="append('5')">5</button>
+        <button class="button1" onclick="append('6')">6</button>
+        <br>
+        <button class="button1" onclick="append('1')">1</button>
+        <button class="button1" onclick="append('2')">2</button>
+        <button class="button1" onclick="append('3')">3</button>
+        <br>
+        <button class="button3" onclick="append('0')">0</button>
+        <br>
+        <button class="button2" onclick="deleteOne()">DEL</button>
+        <button class="button2" onclick="add()">+</button>
+        <button class="button2" onclick="subtract()">-</button>
+        <button class="button2" onclick="multiply()">*</button>
+        <button class="button2" onclick="divide()">/</button>
+        <br>
+        <button class="button4" onclick="equal()">=</button>
+    </div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
